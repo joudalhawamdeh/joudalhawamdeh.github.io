@@ -1,2 +1,2 @@
 # thehumanimpromptu
-joudo.github.io
+thehumanimpromptu.github.io
