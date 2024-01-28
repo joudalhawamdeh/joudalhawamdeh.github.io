@@ -1,2 +1,2 @@
-# joudo
+# thehumanimpromptu
 joudo.github.io
