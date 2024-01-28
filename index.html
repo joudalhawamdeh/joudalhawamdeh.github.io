@@ -36,7 +36,7 @@
     }
 
     nav a:hover {
-      color: #6a7f70; /* Change color on hover for a cooler effect */
+      color: #6a7f70;
     }
 
     main {
@@ -54,6 +54,64 @@
       text-align: center;
       padding: 1em;
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1em;
+    }
+
+    .grid-item {
+      background-color: #fff;
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .big-photo {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 1em;
+    }
+
+    .button {
+      background-color: #6a7f70;
+      color: #fff;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #4c5c4e;
+    }
+
+    .page-number {
+      font-size: 0.8em;
+      color: #555;
+    }
+
+    .title-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .title {
+      font-size: 3em;
+      font-weight: bold;
+      animation: fadeIn 2s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -61,70 +119,82 @@
   <header>
     <h1>Joud Al-Hawamdeh</h1>
     <p>Welcome to my human impromptu</p>
-    <!-- Add a photo or any additional information about yourself here -->
-     <figure>
-    <img src="IMG_6313.heic" alt="1 year old me">
-    <figcaption>Caption for Image 1</figcaption>
-  </figure>
+    <figure>
+      <img src="IMG_6313.heic" alt="1 year old me" class="big-photo">
+      <figcaption>1 year old me</figcaption>
+    </figure>
   </header>
+
+  <div class="title-page">
+    <div class="title">
+      Welcome to My World
+    </div>
+  </div>
 
   <nav>
     <a href="#about">About Me</a>
     <a href="#life">My Life</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a> <!-- Added Projects page -->
+    <a href="#projects">Projects</a>
     <a href="#social">Social Media</a>
   </nav>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I am an extroverted and outgoing individual, embarking on a journey of self-discovery. My interests encompass psychology, philosophy, education, and languages, and I eagerly anticipate personal growth at every juncture of my human experience.</p>
-      <p>My main interests and passions include psychology, philosophy, reading, spirituality, culture, and languages.</p>
-      <!-- Add more information and photos about yourself here -->
+      <div class="grid-container">
+        <div class="grid-item">
+          <p>I am an extroverted and outgoing individual, embarking on a journey of self-discovery.</p>
+          <p>My interests encompass psychology, philosophy, education, and languages, and I eagerly anticipate personal growth at every juncture of my human experience.</p>
+        </div>
+        <div class="grid-item">
+          <img src="your_about_me_image1.jpg" alt="About Me Image 1" class="big-photo">
+        </div>
+        <!-- Add more grid items as needed -->
+      </div>
     </section>
 
     <section id="life">
       <h2>My Life</h2>
-      <p>Currently, I am living my human experience to the fullest, looking at life as if it's my human impromptu.</p>
-      <!-- Add more details and photos about your life here -->
+      <div class="grid-container">
+        <div class="grid-item">
+          <p>Currently, I am living my human experience to the fullest, looking at life as if it's my human impromptu.</p>
+        </div>
+        <div class="grid-item">
+          <img src="your_life_image1.jpg" alt="Life Image 1" class="big-photo">
+        </div>
+        <!-- Add more grid items as needed -->
+      </div>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <p><strong>Introduction:</strong></p>
       <ul>
-        <li><strong>How would you describe yourself in a few sentences?</strong></li>
-        <ul>
-          <li>I am an extroverted and outgoing individual, embarking on a journey of self-discovery. My interests encompass psychology, philosophy, education, and languages, and I eagerly anticipate personal growth at every juncture of my human experience.</li>
-        </ul>
+        <li>I am an extroverted and outgoing individual, embarking on a journey of self-discovery. My interests encompass psychology, philosophy, education, and languages, and I eagerly anticipate personal growth at every juncture of my human experience.</li>
       </ul>
 
       <p><strong>About Me:</strong></p>
-       <ul>
-      <li>Voice Acting</li>
-      <li>Translation (Arabic/English/German)</li>
-      <li>Simultaneous/Consecutive Interpretation (English/Arabic)</li>
-      <li>Business and Literature Writing</li>
-      <li>Content Creation</li>
-      <li>Digital Marketing</li>
-      <li>Social Media Management</li>
-      <li>Problem Solving</li>
-      <li>Technical Proficiency</li>
-      <li>Market Research and Analysis</li>
-      <li>Project Management</li>
-      <li>Effective Presentation</li>
-      <li>Teamwork and Collaboration</li>
-      <li>Time Management</li>
-      <li>Customer Service</li>
-      <li>Adaptability</li>
-      <li>Leadership</li>
-      <li>Debating</li>
-      <li>Storytelling</li>
-    </ul>
-      <p><strong>Is there a particular achievement or project you're proud of?</strong></p>
       <ul>
-        <li>Include details about your achievements or projects here.</li>
+        <li>Voice Acting</li>
+        <li>Translation (Arabic/English/German)</li>
+        <li>Simultaneous/Consecutive Interpretation (English/Arabic)</li>
+        <li>Business and Literature Writing</li>
+        <li>Content Creation</li>
+        <li>Digital Marketing</li>
+        <li>Social Media Management</li>
+        <li>Problem Solving</li>
+        <li>Technical Proficiency</li>
+        <li>Market Research and Analysis</li>
+        <li>Project Management</li>
+        <li>Effective Presentation</li>
+        <li>Teamwork and Collaboration</li>
+        <li>Time Management</li>
+        <li>Customer Service</li>
+        <li>Adaptability</li>
+        <li>Leadership</li>
+        <li>Debating</li>
+        <li>Storytelling</li>
       </ul>
     </section>
 
