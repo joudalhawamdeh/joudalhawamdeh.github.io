@@ -14,43 +14,87 @@
     }
 
     header {
-      background-color: #c1d6c0;
-      color: #333;
+      background-color: #3b5998; /* Updated color to Facebook Blue */
+      color: #fff;
       text-align: center;
-      padding: 1em;
+      padding: 2em;
+    }
+
+    header h1 {
+      margin: 0;
     }
 
     nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #c1d6c0;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
       padding: 0.5em;
     }
 
-    nav a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      transition: color 0.3s;
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    nav a:hover {
-      color: #6a7f70;
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
     }
 
     main {
-      padding: 1em;
-      background-color: #f0f7f3;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 2em;
     }
 
     section {
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .article {
+      border: 1px solid #ddd;
+      padding: 1em;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .article:hover {
+      transform: scale(1.05);
+    }
+
+    .featured-stories {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 20px;
+    }
+
+    .story {
+      border: 1px solid #ddd;
+      padding: 1.5em;
+      border-radius: 12px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .story:hover {
+      transform: scale(1.05);
     }
 
     footer {
-      background-color: #c1d6c0;
-      color: #333;
+      background-color: #333;
+      color: #fff;
       text-align: center;
       padding: 1em;
     }
@@ -170,38 +214,56 @@
 
     <section id="skills">
       <h2>Skills</h2>
-      <p><strong>Introduction:</strong></p>
-      <ul>
-        <li>I am an extroverted and outgoing individual, embarking on a journey of self-discovery. My interests encompass psychology, philosophy, education, and languages, and I eagerly anticipate personal growth at every juncture of my human experience.</li>
-      </ul>
-
-      <p><strong>About Me:</strong></p>
-      <ul>
-        <li>Voice Acting</li>
-        <li>Translation (Arabic/English/German)</li>
-        <li>Simultaneous/Consecutive Interpretation (English/Arabic)</li>
-        <li>Business and Literature Writing</li>
-        <li>Content Creation</li>
-        <li>Digital Marketing</li>
-        <li>Social Media Management</li>
-        <li>Problem Solving</li>
-        <li>Technical Proficiency</li>
-        <li>Market Research and Analysis</li>
-        <li>Project Management</li>
-        <li>Effective Presentation</li>
-        <li>Teamwork and Collaboration</li>
-        <li>Time Management</li>
-        <li>Customer Service</li>
-        <li>Adaptability</li>
-        <li>Leadership</li>
-        <li>Debating</li>
-        <li>Storytelling</li>
-      </ul>
+      <div class="article-grid">
+        <div class="article">
+          <p><strong>Introduction:</strong></p>
+          <ul>
+            <li>I am an extroverted and outgoing individual, embarking on a journey of self-discovery. My interests encompass psychology, philosophy, education, and languages, and I eagerly anticipate personal growth at every juncture of my human experience.</li>
+          </ul>
+        </div>
+        <div class="article">
+          <h3>About Me</h3>
+          <ul>
+            <li>Voice Acting</li>
+            <li>Translation (Arabic/English/German)</li>
+            <li>Simultaneous/Consecutive Interpretation (English/Arabic)</li>
+            <li>Business and Literature Writing</li>
+            <li>Content Creation</li>
+            <li>Digital Marketing</li>
+            <li>Social Media Management</li>
+            <li>Problem Solving</li>
+            <li>Technical Proficiency</li>
+            <li>Market Research and Analysis</li>
+            <li>Project Management</li>
+            <li>Effective Presentation</li>
+            <li>Teamwork and Collaboration</li>
+            <li>Time Management</li>
+            <li>Customer Service</li>
+            <li>Adaptability</li>
+            <li>Leadership</li>
+            <li>Debating</li>
+            <li>Storytelling</li>
+          </ul>
+        </div>
+        <!-- Add more articles as needed -->
+      </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <!-- Add information about your projects here -->
+      <div class="article-grid">
+        <div class="article">
+          <img src="project_image1.jpg" alt="Project 1" class="big-photo">
+          <h3>Project Title 1</h3>
+          <p>Summary of the project goes here.</p>
+        </div>
+        <div class="article">
+          <img src="project_image2.jpg" alt="Project 2" class="big-photo">
+          <h3>Project Title 2</h3>
+          <p>Summary of the project goes here.</p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
     </section>
   </main>
 
