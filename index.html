@@ -69,6 +69,21 @@
       color: #fff; /* White text */
     }
 
+    /* Navigation bar styling */
+    nav .nav-block {
+      background-color: #8A9A5B; /* Color for navigation blocks */
+      padding: 1em 2em; /* Adjust padding as needed */
+      margin: 0;
+      font-size: 1.2em; /* Adjust font size as needed */
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    nav .nav-block:hover {
+      background-color: #6b7d42; /* Darker color on hover */
+    }
+
     main {
       display: grid;
       grid-template-columns: 1fr;
@@ -216,7 +231,7 @@
     <h1>Joud Al-Hawamdeh</h1>
     <p>Welcome to my human impromptu</p>
     <figure>
-      <img src="IMG_6313.jpeg" alt="1 year old me" class="big-photo">
+      <img src="IMG_6313.heic" alt="1 year old me" class="big-photo">
       <figcaption>1 year old me</figcaption>
     </figure>
   </header>
@@ -228,11 +243,13 @@
   </div>
 
   <nav>
-    <a href="#about"> an upfront i guess</a>
-    <a href="#life">my own impromptu</a>
-    <a href="#skills">some things i know</a>
-    <a href="#projects">a digital vision board</a>
-    <a href="#social">my socials</a>
+    <ul>
+      <li><a href="#about" class="nav-block" style="font-size: 1.5em;">an upfront i guess</a></li>
+      <li><a href="#life" class="nav-block">my own impromptu</a></li>
+      <li><a href="#skills" class="nav-block">some things i know</a></li>
+      <li><a href="#projects" class="nav-block">a digital vision board</a></li>
+      <li><a href="#social" class="nav-block">my socials</a></li>
+    </ul>
   </nav>
 
   <main>
