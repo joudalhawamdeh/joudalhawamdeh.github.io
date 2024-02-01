@@ -9,8 +9,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #d8c7aa; /* Beige background */
-    color: #3c2f26; /* Brown text */
+    background-color: #f3ebd9; /* Light beige background */
+    color: #2d241b; /* Dark brown text */
 }
 
 .container {
@@ -30,31 +30,32 @@ body {
 
 /* Style for the titles */
 h1, h2 {
-    color: #3c2f26; /* Brown text */
-    font-weight: normal;
+    color: #2d241b; /* Dark brown text */
+    font-weight: bold;
+    font-size: 2em; /* Increased title font size */
 }
 
 /* Style for the paragraphs */
 p {
     color: #5e5346; /* Lighter brown text */
     line-height: 1.6em;
+    font-size: 1.1em; /* Increased paragraph font size */
 }
 
 header {
-    background-color: #a08868a4; /* Beige header */
+    background-color: #b5a388; /* Beige header */
     text-align: center;
     padding: 2em;
     position: relative;
-    width: 300%;
-    height: 300%;
+    width: 100%;
+    height: 300px; /* Fixed header height */
     overflow: hidden;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em; /* Increase font size */
-    font-weight: bold;
-    color: #3c2f26; /* Brown text */
+    font-size: 3em; /* Increased font size */
+    color: #2d241b; /* Dark brown text */
 }
 
 header:before {
@@ -62,18 +63,18 @@ header:before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300%;
-    height: 300%;
-    background: linear-gradient(45deg, #4d4134, transparent 75%, transparent); /* Brown gradient */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4d4134, transparent 75%, transparent); /* Dark brown gradient */
     z-index: 1;
     pointer-events: none;
     opacity: 0.5;
 }
 
 nav {
-    background-color: #b5a388; /* Beige navigation */
+    background-color: #827561; /* Dark beige navigation */
     text-align: center;
-    padding: 0.5em;
+    padding: 1em;
 }
 
 nav ul {
@@ -92,15 +93,16 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #3c2f26; /* Brown text */
+    color: #2d241b; /* Dark brown text */
+    font-size: 1.2em; /* Increased font size */
 }
 
 /* Navigation bar styling */
 nav .nav-block {
     background-color: #a08868; /* Beige navigation blocks */
-    padding: 1em 2em; /* Adjust padding as needed */
+    padding: 1.5em 2.5em; /* Adjusted padding */
     margin: 0;
-    font-size: 1.2em; /* Adjust font size as needed */
+    font-size: 1.3em; /* Increased font size */
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -129,8 +131,8 @@ section {
 }
 
 .article {
-    border: 1px solid #5e5346; /* Brown border */
-    padding: 1em;
+    border: 1px solid #5e5346; /* Dark brown border */
+    padding: 1.5em; /* Adjusted padding */
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
