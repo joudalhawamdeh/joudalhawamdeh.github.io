@@ -111,3 +111,144 @@
   </footer>
 </body>
 </html>
+
+/* Reset some default styling */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gazpacho', sans-serif; /* Use Gazpacho font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3ebd9; /* Light beige background */
+    color: #2d241b; /* Dark brown text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    padding: 50px;
+}
+
+.section {
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for the titles */
+h1, h2 {
+    color: #2d241b; /* Dark brown text */
+    font-weight: bold;
+    font-size: 2em; /* Increased title font size */
+}
+
+/* Style for the paragraphs */
+p {
+    color: #5e5346; /* Lighter brown text */
+    line-height: 1.6em;
+    font-size: 1.1em; /* Increased paragraph font size */
+}
+
+header {
+    background-color: #b5a388; /* Beige header */
+    text-align: center;
+    padding: 2em;
+    position: relative;
+    width: 100%;
+    height: 300px; /* Fixed header height */
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; /* Increased font size */
+    color: #2d241b; /* Dark brown text */
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4d4134, transparent 75%, transparent); /* Dark brown gradient */
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+nav {
+    background-color: #827561; /* Dark beige navigation */
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Add flex display for centering */
+    justify-content: center;
+    padding-top: 0.5em;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2d241b; /* Dark brown text */
+    font-size: 1.2em; /* Increased font size */
+}
+
+/* Navigation bar styling */
+nav .nav-block {
+    background-color: #a08868; /* Beige navigation blocks */
+    padding: 1.5em 2.5em; /* Adjusted padding */
+    margin: 0;
+    font-size: 1.3em; /* Increased font size */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav .nav-block:hover {
+    background-color: #7a634e; /* Darker brown on hover */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 2em;
+    padding-top: 2em; /* Add padding-top */
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.article {
+    border: 1px solid #5e5346; /* Dark brown border */
+    padding: 1.5em; /* Adjusted padding */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+</style>
+</html>
