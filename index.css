@@ -5,7 +5,12 @@ body, h1, h2, p {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gazpacho', sans-serif; /* Use Gazpacho font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d8c7aa; /* Beige background */
+    color: #3c2f26; /* Brown text */
 }
 
 .container {
@@ -20,122 +25,112 @@ body {
 
 .section {
     padding: 50px;
-    border-bottom: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;
 }
 
 /* Style for the titles */
 h1, h2 {
-   color: #333; 
-   font-weight:normal; 
+    color: #3c2f26; /* Brown text */
+    font-weight: normal;
 }
 
 /* Style for the paragraphs */
 p {
-   color:#666; 
-   line-height:1.6em; 
-}
-
-/* Embed the CSS code above here */
-body {
-  font-family: 'Gazpacho', sans-serif; /* Use Gazpacho font */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #3f4d24; /* Dark olive green background */
-  color: #fff; /* White text */
+    color: #5e5346; /* Lighter brown text */
+    line-height: 1.6em;
 }
 
 header {
-  background-color: #556b2fa4; /* Olive green header */
-  text-align: center;
-  padding: 2em;
-  position: relative;
-  width: 300%;
-  height: 300%;
-  overflow: hidden;
+    background-color: #a08868a4; /* Beige header */
+    text-align: center;
+    padding: 2em;
+    position: relative;
+    width: 300%;
+    height: 300%;
+    overflow: hidden;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 3em; /* Increase font size */
-  font-weight: bold;
-  color: #fff; /* White text */
+    margin: 0;
+    font-size: 3em; /* Increase font size */
+    font-weight: bold;
+    color: #3c2f26; /* Brown text */
 }
 
 header:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300%;
-  height: 300%;
-  background: linear-gradient(45deg, #000, transparent 75%, transparent);
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.5;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, #4d4134, transparent 75%, transparent); /* Brown gradient */
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 nav {
-  background-color: #8f9d5a; /* Olive green navigation */
-  text-align: center;
-  padding: 0.5em;
+    background-color: #b5a388; /* Beige navigation */
+    text-align: center;
+    padding: 0.5em;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Add flex display for centering */
-  justify-content: center;
-  padding-top: 0.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Add flex display for centering */
+    justify-content: center;
+    padding-top: 0.5em;
 }
 
 nav li {
-  display: inline;
-  margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav a {
-  text-decoration: none;
-  color: #fff; /* White text */
+    text-decoration: none;
+    color: #3c2f26; /* Brown text */
 }
 
 /* Navigation bar styling */
 nav .nav-block {
-  background-color: #8A9A5B; /* Color for navigation blocks */
-  padding: 1em 2em; /* Adjust padding as needed */
-  margin: 0;
-  font-size: 1.2em; /* Adjust font size as needed */
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #a08868; /* Beige navigation blocks */
+    padding: 1em 2em; /* Adjust padding as needed */
+    margin: 0;
+    font-size: 1.2em; /* Adjust font size as needed */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 nav .nav-block:hover {
-  background-color: #6b7d42; /* Darker color on hover */
+    background-color: #7a634e; /* Darker brown on hover */
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 2em;
-  padding-top: 2em; /* Add padding-top */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 2em;
+    padding-top: 2em; /* Add padding-top */
 }
 
 section {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .article-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
 }
 
 .article {
-  border: 1px solid #556b2f; /* Olive green border */
-  padding: 1em;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+    border: 1px solid #5e5346; /* Brown border */
+    padding: 1em;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
